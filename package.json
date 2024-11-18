@@ -1,0 +1,14 @@
+{
+  "dependencies": {
+    "global": "^4.4.0",
+    "vercel": "^39.0.2"
+  },
+  "scripts": {
+    "dev": "concurrently \"npm run next\" \"npm run django\"",
+    "next": "cd hello-next && npm run dev",
+    "django": "python3 manage.py runserver"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}

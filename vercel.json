@@ -1,0 +1,20 @@
+{
+    "version": 2,
+    "builds": [
+      {
+        "src": "hello-next/package.json",
+        "use": "@vercel/next"
+      }
+    ],
+    "routes": [
+      {
+        "src": "/_next/(.*)",
+        "dest": "/hello-next/$1"
+      },
+      {
+        "src": "/(.*)",
+        "dest": "/hello-next/$1"
+      }
+    ]
+  }
+  
