@@ -76,9 +76,12 @@ TEMPLATES = [
     },
 ]
 
-# CORS_ALLOWED_ORIGINS = [
-#     "http://localhost:3000",
-# ]
+#----- ths is must when you try to run on local to integrate next js with backend
+CORS_ALLOWED_ORIGINS = [
+    "http://localhost:3000",
+]
+
+#-----------
 WSGI_APPLICATION = 'vercel_app.wsgi.application'
 
 
